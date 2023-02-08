@@ -1,4 +1,3 @@
-import { useState }  from 'react';
 import CreateToDo    from '../components/CreateToDo/CreateToDo'
 import ToDoList      from '../components/ToDoList/ToDoList';
 import ErrorBoundary from '../components/ErrorBoundary/ErrorBoundary';
@@ -6,7 +5,6 @@ import Settings      from '../components/Settings/Settings';
 
 const MainPage = ({fontColor,todo,setToDo,completed,setCompleted,setActive}) => {
 
-    const [value,setValue] = useState('');
 
    
 return(
@@ -27,9 +25,7 @@ return(
             
         <ErrorBoundary>
             <CreateToDo todo={todo} 
-                     setToDo={setToDo} 
-                       value={value} 
-                    setValue={setValue}        
+                     setToDo={setToDo}        
                    fontColor={fontColor} />
         </ErrorBoundary>
             

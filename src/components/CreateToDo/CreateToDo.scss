@@ -28,6 +28,13 @@ input{
 }
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
 input{
     margin:0;
     height: 70px;
@@ -46,17 +53,15 @@ input{
 div{
     align-items: center;
     min-height: 100%;
+    text-align: center;
     .addButton{
         min-width: 200px;
         max-width: 200px;
         min-height: 40px;
         background-color: #323232;
-        position: relative;
-        top: 0px;
-        left: 0px;
         font-size: 18px;
         border: none;
-        margin: 40px 0;
+        margin: 40px 0px;
         color: white;
          cursor: pointer;
          border-radius: 20px;
